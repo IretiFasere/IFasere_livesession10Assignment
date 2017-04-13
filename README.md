@@ -1,14 +1,10 @@
 # IFasere_livesession10Assignment
 1.#Create a new variable called AgeGroup from the nyt1 data
 
-
 2.# Create subset  “ImpSub” where Impressions > 0 ) in your data set.
-ImpSub <- subset(nyt1, Impressions>0)
 
 3.# Plot the distribution of number of Impressions and CTR by AgeGroup.
 library(ggplot2) # used for visualizations
-ggplot(subset(ImpSub, Impressions>0), aes(x=Impressions, fill=AgeGroup))+
-geom_histogram(binwidth=1)
 
 4.# Define new variable to segment users based on CTR
 
