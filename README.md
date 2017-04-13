@@ -2,15 +2,8 @@
 1.#Create a new variable called AgeGroup from the nyt1 data
 
 
-# Take a look at the Data set after changes.
-head(nyt1)
-
-
 2.# Create subset  “ImpSub” where Impressions > 0 ) in your data set.
 ImpSub <- subset(nyt1, Impressions>0)
-
-# Create variable cick-through-rate (CTR)and add to ImpSub
-ImpSub$CTR <- ImpSub$Clicks/ImpSub$Impressions
 
 3.# Plot the distribution of number of Impressions and CTR by AgeGroup.
 library(ggplot2) # used for visualizations
